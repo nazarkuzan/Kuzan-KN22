@@ -1,0 +1,45 @@
+using System;
+using System.Text;
+
+namespace Lab01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.OutputEncoding = Encoding.UTF8;
+
+            
+            int width = 50;
+
+            
+            Console.WriteLine("╔" + new string('═', width) + "╗");
+
+            
+            Console.WriteLine("║" + " КАРТКА КОНТАКТУ".PadRight(width) + "║");
+
+            
+            Console.WriteLine("╠" + new string('═', width) + "╣");
+
+            
+            Console.WriteLine("║" + " Ім'я: Кузан Назар".PadRight(width) + "║");
+            Console.WriteLine("║" + " Посада: Студент".PadRight(width) + "║");
+            Console.WriteLine("║" + " Організація: Фаховий коледж ДВНЗ «УжНУ»".PadRight(width) + "║");
+            Console.WriteLine("║" + " Електронна пошта:nazar.kuzan@student.uzhnu.edu.ua".PadRight(width) + "║");
+
+            
+            Console.WriteLine("║" + " Девіз: \"Навчання — шлях до успіху\"".PadRight(width) + "║");
+
+            
+            Console.WriteLine("╚" + new string('═', width) + "╝");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("Оновлено: 5 жовтня 2026 р.");
+            Console.WriteLine();
+            Console.Write("Натисніть Enter для завершення...");
+            Console.ReadLine();
+            
+
+        }
+    }
+}
